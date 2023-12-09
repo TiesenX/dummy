@@ -1,8 +1,6 @@
 #!/bin/bash
 
-make > /dev/null 2>&1
-
-if [[ $? -eq 0  ]] 
+if make > /dev/null 2>&1; 
 then
 	echo "Done"
 else
